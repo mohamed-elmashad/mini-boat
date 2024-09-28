@@ -1,7 +1,5 @@
 # mini-boat
 
-# Joystick Controlled Motor System
-
 ## Overview
 This project controls two DC motors using a joystick connected to a computer, an Arduino board for motor control, and a Jetson device as an intermediary to relay commands between the joystick and Arduino. The joystick inputs are processed by the `controller.py` script, which sends motor speed data to the Jetson (`jetson_client.py`) via a TCP socket. The Jetson forwards these commands to the Arduino over a serial connection, and the Arduino adjusts the motors accordingly.
 
